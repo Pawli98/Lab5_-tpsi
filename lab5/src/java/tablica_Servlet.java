@@ -98,6 +98,7 @@ public class tablica_Servlet extends HttpServlet
         {
             request.getRequestDispatcher("tablica.jsp").forward(request, response);
         } 
+        
     }
     
     /**

@@ -12,7 +12,7 @@
 public class Student 
 {
     
-private String emailAddress, firstName, lastName;
+    private String firstName, lastName,emailAddress;
     
     public Student(String firstName, String lastName, String emailAddress) 
     {     

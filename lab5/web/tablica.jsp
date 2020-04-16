@@ -14,12 +14,13 @@
         <title>Tablica zad nr.5</title>
     </head>
     <body>
-        <h1>Lista studentów</h1>
+        <h1><p style="text-align: center">Lista studentów</p></h1>
         <table border="1">
             <thead>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                
+                <th>&nbsp; Firstname &nbsp; </th>
+                <th>&nbsp; Lastname &nbsp; </th>
+                <th>&nbsp; Email &nbsp; </th>
             </thead>
             <tbody>
                 <c:forEach items="${sessionScope.student_Tab}" var="student">
@@ -27,6 +28,7 @@
                         <th><c:out value="${student.getFirstName()}"/> </th>
                         <th><c:out value="${student.getLastName()}"/> </th>
                         <th><c:out value="${student.getEmail()}"/> </th>
+                        
                     </tr>
                 </c:forEach>
             </tbody>
@@ -34,13 +36,15 @@
         <br><br>
         <h1>Dodaj nowego studenta:</h1>
         <form action='/lab5/tablica' method='post'>
-            Imie:
+            Imie: &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;
             <input type='text' name='imie'><br>
             Nazwisko:
             <input type='text' name='nazwisko'><br>
-            Email:
+            Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type='text' name='email'><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;     
             <input type='submit'>
+            
 	</form>
         
         

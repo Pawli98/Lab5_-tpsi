@@ -13,7 +13,7 @@
         <title>Zliczanie</title>
     </head>
     
-        Liczba obób odwiedzających : ${Zliczanie}
+        <p style="text-align: center">Liczba osób odwiedzających : ${Zliczanie} </p>
         <br><a href="/lab5/index.html"> Strona główna </a>
     
 </html>
